@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body{
+    background-color: #911ae2;
+    font-family: "roboto" , sans-serif;
+}
+.start-quaiz{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.start-quaiz:hover{
+    background-color: white;
+    color: #911ae2;
+}
+.inactive{
+    display: none;
+}
+.disable{
+    pointer-events: none;
+}
+.quaiz-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid white;
+    color: white;
+    box-shadow: 0 0 10px #777;
+    padding: 50px;
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(0,0,0,0.5);    
+    
+}
+.quaiz-box h2{
+    font-size: 36px;
+}
+.quaiz-box .option{
+    font-size: 1.3rem;
+    border: 2px solid white;
+    padding: 12px 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    transition: all .3s;
+    cursor: pointer;
+    position: relative;
+}
+.quaiz-box .option .fa{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 30px;
+}
+.quaiz-box .option.correct{
+    background: rgba(157, 246, 157);
+    color: rgba(6, 138, 28);
+    border-bottom: rgba(6, 138, 28);
+
+}
+.quaiz-box .option.incorrect{
+    background: rgba(241, 153, 153);
+    color: rgba(184, 12, 12);
+    border-bottom: rgba(184, 12, 12);
+}
+
+.quaiz-box .option:hover{
+    background-color: #911ae2;
+}
+.quaiz-footer{
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px dashed white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quaiz-footer .quaiz-left{
+    font-size: 18px;
+}
+.quaiz-footer .next-btn{
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+.quaiz-footer .next-btn:hover{
+    color: #911ae2;
+    background-color: white;
+}
+.result-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    width: 100%;
+    max-width: 450px;
+    background: rgba(0,0,0,0.5);
+}
+.result-box h2{
+    font-size: 36px;
+    background-color: white;
+    color: #911ae2;
+    text-align: center;
+    padding: 20px 0;
+}
+.result-box .result{
+    padding: 40px;
+}
+.result-box h3{
+    font-size: 30px;
+    margin-bottom: 10x;
+}
+.result-footer{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+.again-quaiz, .exit{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.again-quaiz{
+    color: white;
+    background: #911ae2;
+    border-color: #911ae2;
+}
+.again-quaiz:hover{
+    color: #911ae2;
+    background: white;
+    border-color:white;
+}
+.exit{
+    color: #911ae2;
+    background: white;
+    border-color:white;
+}
+.exit:hover{
+    color: white;
+    background: #911ae2;
+    border-color: #911ae2;
+
+}
+
